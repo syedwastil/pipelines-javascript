@@ -30,4 +30,4 @@ steps:
     method: 'GET'
     urlSuffix: 'https://timeapi.io/api/time/current/zone?timeZone=Europe/Amsterdam'
     waitForCompletion: 'false'
-- script: echo hello
+

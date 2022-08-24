@@ -22,6 +22,7 @@ trigger:
 
 # Invoke REST API
 # Invoke a REST API as a part of your pipeline.
+pool: server
 steps:
 - task: InvokeRESTAPI@1
   inputs:
@@ -29,3 +30,4 @@ steps:
     method: 'GET'
     urlSuffix: 'https://timeapi.io/api/time/current/zone?timeZone=Europe/Amsterdam'
     waitForCompletion: 'false'
+- script: echo hello
